@@ -1,5 +1,3 @@
-# MailerQ EJS Renderer
-
 ## Installation
 
 ```bash
