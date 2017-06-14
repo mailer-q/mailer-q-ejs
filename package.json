@@ -1,14 +1,18 @@
 {
-  "name": "mailer-q-ejs",
-  "version": "1.0.1",
-  "description": "EJS renderer for the MailerQ plugin",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Arun Sood",
-  "license": "MIT",
-  "dependencies": {
-    "ejs": "^2.5.6"
-  }
+    "name": "mailer-q-ejs",
+    "version": "1.0.2",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/arsood/mailer-q-ejs"
+    },
+    "description": "EJS renderer for the MailerQ plugin",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Arun Sood",
+    "license": "MIT",
+    "dependencies": {
+        "ejs": "^2.5.6"
+    }
 }
