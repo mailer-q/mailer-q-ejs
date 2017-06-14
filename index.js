@@ -2,7 +2,7 @@ const fs = require("fs");
 const ejs = require("ejs");
 const path = require("path");
 
-const MailerQRenderer = (dirPath, vars) => {
+const MailerQRenderer = (dirPath) => {
     return (templateFileName, vars) => {
         const templateString = fs.readFileSync(path.join(dirPath, templateFileName), "utf8");
 
