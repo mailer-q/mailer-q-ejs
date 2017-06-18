@@ -1,9 +1,9 @@
 {
     "name": "mailer-q-ejs",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "repository": {
         "type": "git",
-        "url": "https://github.com/arsood/mailer-q-ejs"
+        "url": "https://github.com/mailer-q/mailer-q-ejs"
     },
     "description": "EJS renderer for the MailerQ plugin",
     "main": "index.js",

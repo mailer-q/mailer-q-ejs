@@ -1,3 +1,5 @@
+# MailerQ EJS Plugin
+
 ## Installation
 
 ```bash
