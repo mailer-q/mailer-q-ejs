@@ -3,11 +3,14 @@ const ejs = require("ejs");
 const path = require("path");
 
 const MailerQRenderer = (dirPath) => {
-    return (templateFileName, vars) => {
-        const templateString = fs.readFileSync(path.join(dirPath, templateFileName), "utf8");
+  return (templateFileName, vars) => {
+    const templateString = fs.readFileSync(
+      path.join(dirPath, templateFileName),
+      "utf8"
+    );
 
-        return ejs.render(templateString, vars);
-    }
-}
+    return ejs.render(templateString, vars);
+  };
+};
 
 module.exports = MailerQRenderer;

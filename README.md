@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm install mailer-q-ejs
+npm install mailer-q-ejs --save
 ```
 
 ## Usage
@@ -16,41 +16,13 @@ Example configuration:
 
 ```javascript
 const path = require("path");
+const MailerQ = require("mailer-q")();
 const MailerQEjs = require("mailer-q-ejs");
 
-const config = {
-	renderer: MailerQEjs(path.join(__dirname, "./email_templates")),
-	defaultFrom: "Test Tester test@example.com",
-	defaultTo: "recipient@test.com",
-	host: "smtp.example.com",
-	port: 587,
-	auth: {
-		user: "your username",
-		pass: "your pass"
-	}
-}
-```
+const options = {
+  ...otherOptionsHere,
+  renderer: MailerQEjs(path.join(__dirname, "./email_templates"))
+};
 
-Example sending mail:
-
-```javascript
-const MailerQ = require("./config/mailers");
-
-MailerQ
-.contents({
-	from: "Test Sender sender@test.com",
-	to: "recipient@example.com",
-	subject: "Test message",
-	templateFileName: "welcome.ejs",
-	locals: {
-		name: "Bob Jones"
-	}
-})
-.deliverNow()
-.then(() => {
-	console.log("Message sent!");
-})
-.catch((err) => {
-	console.log(err);
-});
+module.exports = MailerQ.config(options);
 ```
